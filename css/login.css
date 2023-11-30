@@ -1,0 +1,138 @@
+/* color variables */
+
+:root{
+    --pink: #FF00F5;
+    --cyan: #00E0FF;
+    --yellow: #FFD600;
+    --orange: #FF7B01;
+    --dark-bg: #281130;
+    --red: #d71010;
+    
+
+   
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-bg);
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    color: white;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15vmin;
+    text-transform: uppercase;
+}
+p, input{
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+}
+
+.ascii, pre{
+    text-align: center;
+    white-space: pre;
+    margin: 0;
+    display: none;
+}
+input{
+    margin: .5rem;
+    padding: 2%;
+    border: #fff;
+   
+}
+input:focus, input:hover{
+    box-shadow: inset 0 0 10px var(--pink), 0 0 10px 1px var(--pink);
+}
+
+.login{
+    height: max(100vh, 100%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#interlaced {
+    position: fixed;
+    background: repeating-linear-gradient(transparent 0px 1px, hsl(154 0% 0%/.3) 3px 4px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    pointer-events: none;
+    animation: lines 0.066666666s linear infinite;
+}
+
+
+#glare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* ensure the effect doesn't cover the text */
+    background: radial-gradient(hsl(270, 5%, 15%) 0%, hsl(291, 52%, 5%) 70%);
+  }
+
+form{
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle{
+    font-size: 5vmin;
+    text-transform: capitalize;
+
+}
+
+.logo_txt{
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 0.15em var(--pink)
+ 
+}
+.logo{
+    width: 5rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.glow_stroke{
+    box-shadow: inset 0 0 50px var(--pink), 0 0 50px 15px var(--pink);
+    margin: 2%;
+    border-radius: .5rem;
+    border: 2px solid var(--pink);
+}
+.card{
+    color: white;
+    text-align: right;
+    padding: 1.5rem;
+    margin-top: 25px;
+    border-radius: .5rem;
+    
+}
+#submit{
+    background-color: white;
+    color: var(--dark-bg);
+}
+#submit:hover, #submit:focus{
+    color: var(--dark-bg);
+    background-color: var(--cyan);
+    box-shadow: inset 0 0 10px var(--cyan), 0 0 10px 2px var(--cyan);
+    font-weight: bold;
+}
+
+/* desktop styling */
+
+@media screen and (min-width: 768px) {
+    .ascii{
+        display: block;
+    }
+    
+}
+

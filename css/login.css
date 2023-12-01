@@ -11,6 +11,19 @@
 
    
 }
+.skip{
+    position: absolute;
+    top: -60px;
+    background-color: white;
+    color:black;
+}
+.skip:focus{
+    top: 20px;
+    text-align: center;
+    left: 30px;
+  
+  
+}
 *{
     box-sizing: border-box;
 }
@@ -39,7 +52,6 @@ p, input{
 input{
     margin: .5rem;
     padding: 2%;
-    border: #fff;
    
 }
 input:focus, input:hover{
@@ -50,7 +62,7 @@ input:focus, input:hover{
     height: max(100vh, 100%);
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #interlaced {
@@ -74,11 +86,11 @@ input:focus, input:hover{
     bottom: 0;
     z-index: -1; /* ensure the effect doesn't cover the text */
     background: radial-gradient(hsl(270, 5%, 15%) 0%, hsl(291, 52%, 5%) 70%);
-  }
+}
 
 form{
     font-family: "Roboto Mono", 'Courier New', Courier, monospace;
-    margin-top: 10%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,9 +109,9 @@ form{
  
 }
 .logo{
-    width: 5rem;
+    width: 8rem;
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .glow_stroke{
@@ -112,6 +124,7 @@ form{
     color: white;
     text-align: right;
     padding: 1.5rem;
+    padding-bottom: 0px;
     margin-top: 25px;
     border-radius: .5rem;
     
@@ -119,6 +132,9 @@ form{
 #submit{
     background-color: white;
     color: var(--dark-bg);
+    border: none;
+    text-transform: uppercase;
+
 }
 #submit:hover, #submit:focus{
     color: var(--dark-bg);
@@ -126,12 +142,25 @@ form{
     box-shadow: inset 0 0 10px var(--cyan), 0 0 10px 2px var(--cyan);
     font-weight: bold;
 }
+.warning{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--yellow);
+    text-shadow: 0 0 0.15em var(--yellow);
+    
+}
 
 /* desktop styling */
 
 @media screen and (min-width: 768px) {
     .ascii{
-        display: block;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .a_container{
+        text-align: center;
     }
     
 }

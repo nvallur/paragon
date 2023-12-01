@@ -1,0 +1,132 @@
+:root{
+    --pink: #FF00F5;
+    --cyan: #00E0FF;
+    --yellow: #FFD600;
+    --orange: #FF7B01;
+    --dark-bg: #281130;
+    --red: #d71010;
+    
+
+   
+}
+.skip{
+    position: absolute;
+    top: -60px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    height: max-content;
+    z-index: 4;
+}
+.skip:focus{
+    top: 20px;
+    text-align: center;
+    left: 30px;
+  
+  
+}
+.glow_stroke{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subject_menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 1rem;
+    width: 90vw;
+   
+
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.nav_links a{
+    text-align: left;
+    font-size: .8rem;
+    padding: 0;
+
+}
+
+.nav_links a:hover, .nav_links a:focus, .active, .back:hover, .back:focus{
+    text-shadow: 0 0 0.15em var(--yellow);
+    color: var(--yellow);
+    
+}
+.a_nav_border{
+    background-color: var(--yellow);
+    width: 100%;
+    height: .5rem;
+}
+.a_nav_fill{
+    border: 2px solid var(--yellow);
+}
+.nav_border{
+    background-color: white;
+    width: 100%;
+    height: .5rem;
+}
+.nav_fill{
+    border: 2px solid rgb(255, 255, 255. 20)
+}
+.divider{
+    background-color: white;
+    width: 90%;
+
+    height: .1rem;
+    margin-bottom: 5rem;
+    margin: auto;
+    
+}
+.record{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    margin: 0;
+    padding: 1rem;
+    overflow: auto;
+    height: 100%;
+    
+
+}
+.record div p:first-child{
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+}
+.record div p:last-child{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.details{
+    grid-column-end: span 2;
+}
+.record div{
+    border: 2px solid white;
+    padding: 8px;
+}
+.record div:hover{
+    box-shadow: inset 0 0 10px var(--yellow), 0 0 10px 2px var(--yellow);
+
+}
+.imp{
+    color: var(--cyan);
+    font-weight: bolder;
+    text-shadow: 0 0 0.15em var(--cyan);
+}
+
+.imp:hover{
+    color: white;
+    text-shadow: none;
+}
+#creepy{
+    display: none;
+}
+
+

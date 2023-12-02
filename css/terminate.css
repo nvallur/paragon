@@ -1,0 +1,41 @@
+:root{
+    --pink: #FF00F5;
+    --cyan: #00E0FF;
+    --yellow: #FFD600;
+    --orange: #FF7B01;
+    --dark-bg: #281130;
+    --red: #d71010;
+    
+
+   
+}
+
+h1{
+   
+    text-align: center;
+    padding: 10%;
+    padding-bottom: 2%;
+    color: var(--yellow);
+    text-shadow: 0 0 0.15em var(--yellow);
+}
+p{
+    text-align: center;
+    
+}
+.run{
+    color:var(--cyan)
+}
+.exit{
+    display: block;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.exit a:visited{
+    color: white;
+}
+.exit a:hover, .exit a:focus{
+    color: var(--pink);
+    text-shadow: 0 0 0.15em var(--pink);
+}

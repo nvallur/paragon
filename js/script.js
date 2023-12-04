@@ -28,77 +28,85 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
     const info = document.getElementsByClassName("stat_info");
 
     for (let i = 0; i < statsDivs.length; i++){
-        statsDivs[i].addEventListener("mouseover", function(){
-            for (let j = 0; j < hidden.length; j++){
-               
-                hidden[j].style.display = "block";
-            }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "none";
-            }
-            
-            
 
-            
-        });
-        statsDivs[i].addEventListener("mouseout", function(){
-            for (let j = 0; j < hidden.length; j++){
-                hidden[j].style.display = "none";
-            }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "block";
-            }
-        });
-       
-    }
-    for (let i = 0; i < statsDivs.length; i++){
-        statsDivs[i].addEventListener("focus", function(){
-            for (let j = 0; j < hidden.length; j++){
+        if (window.matchMedia("(min-width: 750px)").matches) {
+            statsDivs[i].addEventListener("mouseover", function(){
+                for (let j = 0; j < hidden.length; j++){
+                   
+                    hidden[j].style.display = "block";
+                }
+                for (let k = 0; k < info.length; k++){
+                    info[k].style.display = "none";
+                }
+                
+            });
+            statsDivs[i].addEventListener("mouseout", function(){
+                for (let j = 0; j < hidden.length; j++){
+                    hidden[j].style.display = "none";
+                }
+                for (let k = 0; k < info.length; k++){
+                    info[k].style.display = "block";
+                }
+            });
+            for (let i = 0; i < statsDivs.length; i++){
+                statsDivs[i].addEventListener("focus", function(){
+                    for (let j = 0; j < hidden.length; j++){
+                       
+                        hidden[j].style.display = "block";
+                    }
+                    for (let k = 0; k < info.length; k++){
+                        info[k].style.display = "none";
+                    }
+                    
+                    
+        
+                    
+                });
+                statsDivs[i].addEventListener("blur", function(){
+                    for (let j = 0; j < hidden.length; j++){
+                        hidden[j].style.display = "none";
+                    }
+                    for (let k = 0; k < info.length; k++){
+                        info[k].style.display = "block";
+                    }
+                });
                
-                hidden[j].style.display = "block";
             }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "none";
-            }
+           
+        }
+      
+        else{
+            for (let i = 0; i < statsDivs.length; i++){
+                statsDivs[i].addEventListener("touchstart", function(){
+                    for (let j = 0; j < hidden.length; j++){
+                       
+                        hidden[j].style.display = "block";
+                    }
+                    for (let k = 0; k < info.length; k++){
+                        info[k].style.display = "none";
+                    }
+                    
+                    
+        
+                    
+                });
             
-            
-
-            
-        });
-        statsDivs[i].addEventListener("blur", function(){
-            for (let j = 0; j < hidden.length; j++){
-                hidden[j].style.display = "none";
-            }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "block";
-            }
-        });
-       
-    }
-    for (let i = 0; i < statsDivs.length; i++){
-        statsDivs[i].addEventListener("touchstart", function(){
-            for (let j = 0; j < hidden.length; j++){
+                statsDivs[i].addEventListener("touchend", function(){
+                    for (let j = 0; j < hidden.length; j++){
+                        hidden[j].style.display = "none";
+                    }
+                    for (let k = 0; k < info.length; k++){
+                        info[k].style.display = "block";
+                    }
+                });
                
-                hidden[j].style.display = "block";
             }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "none";
-            }
-            
-            
-
-            
-        });
-        statsDivs[i].addEventListener("touchend", function(){
-            for (let j = 0; j < hidden.length; j++){
-                hidden[j].style.display = "none";
-            }
-            for (let k = 0; k < info.length; k++){
-                info[k].style.display = "block";
-            }
-        });
-       
+    
+        }
     }
+ 
+
+    
     
    
 }

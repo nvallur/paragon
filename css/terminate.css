@@ -53,16 +53,17 @@ p{
     color: var(--yellow);
     padding-bottom: 100px;
 }
-#name{
-    text-shadow: 0 0 0.1em var(--yellow);
-    color: var(--yellow);
-    font-weight: normal;
-}
+
 #creepy, #creepy2, #instructions, #name{
     font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
  
+}
+#name{
+    text-shadow: 0 0 0.1em var(--yellow);
+    color: var(--yellow);
+    font-weight: normal;
 }
 @media screen and (min-width: 750px){
     h1{

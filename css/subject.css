@@ -9,6 +9,10 @@
 
    
 }
+h1{
+    text-align: center;
+    padding: 1rem;
+}
 .skip{
     position: absolute;
     top: -60px;
@@ -171,6 +175,53 @@ h2{
     font-size: 1.5rem;
     margin: 0;
     margin-bottom: 1rem;
+}
+
+.stats{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.stats div{
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+
+
+}
+.stats div:hover, .stats div:focus{
+    box-shadow: inset 0 0 10px var(--cyan), 0 0 10px 2px var(--cyan);
+    background-color: var(--cyan);
+    color: var(--dark-bg);
+
+}
+.stats div p:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+.stats div p:nth-child(2){
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.hidden{
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 750px) {
+    .stats div{
+        width: 40%;
+    }
+    
 }
 
 

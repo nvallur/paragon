@@ -76,7 +76,7 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
        
     }
     for (let i = 0; i < statsDivs.length; i++){
-        statsDivs[i].addEventListener("mousedown", function(){
+        statsDivs[i].addEventListener("touchstart", function(){
             for (let j = 0; j < hidden.length; j++){
                
                 hidden[j].style.display = "block";
@@ -89,7 +89,7 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
 
             
         });
-        statsDivs[i].addEventListener("mouseup", function(){
+        statsDivs[i].addEventListener("touchend", function(){
             for (let j = 0; j < hidden.length; j++){
                 hidden[j].style.display = "none";
             }

@@ -24,11 +24,12 @@ a{
 }
 h1{
     text-align: center;
+    padding: 1rem;
 }
-.glow_stroke{
+/* .glow_stroke{
 
     height: max-content;
-}
+} */
 
 
 .grid{
@@ -36,14 +37,14 @@ h1{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem;
     justify-items: center;
-    height: max(100vh, 100%);
+    height: 100vh;
 }
 .subject{
     padding: .2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 90%;
-    height: 5rem;
+    height: 90%;
     display: flex;
     justify-content: center;
     border: 2px solid var(--cyan);

@@ -89,7 +89,7 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
 
             
         });
-        statsDivs[i].addEventListener("blur", function(){
+        statsDivs[i].addEventListener("click", function(){
             for (let j = 0; j < hidden.length; j++){
                 hidden[j].style.display = "none";
             }

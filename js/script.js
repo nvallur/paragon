@@ -76,7 +76,7 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
        
     }
     for (let i = 0; i < statsDivs.length; i++){
-        statsDivs[i].addEventListener("click", function(){
+        statsDivs[i].addEventListener("mousedown", function(){
             for (let j = 0; j < hidden.length; j++){
                
                 hidden[j].style.display = "block";
@@ -89,7 +89,7 @@ if(window.location.href.indexOf('subject_a_bio_stats.html') > -1){
 
             
         });
-        statsDivs[i].addEventListener("click", function(){
+        statsDivs[i].addEventListener("mouseup", function(){
             for (let j = 0; j < hidden.length; j++){
                 hidden[j].style.display = "none";
             }
